@@ -9,10 +9,10 @@ from services.summarizer import summarize_video
 
 app = FastAPI(title="YouTube Video Summarizer and Q&A", description="A FastAPI application that summarizes YouTube videos and answers questions based on the video content.", version="1.0.0")
 
-
+frontend_url = settings.frontend_url  # Get the frontend URL from the .env file
 origins = [
     "http://localhost:5173", 
-    
+     frontend_url,  # Allow the frontend URL from the .env file
     "http://127.0.0.1:5173",    # Vite local development port
     "https://yourfrontend.com/*",  # my Production domain
 ]

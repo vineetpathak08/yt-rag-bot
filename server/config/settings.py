@@ -34,6 +34,9 @@ class Settings:
     server_name: str = os.getenv("SERVER_NAME", "0.0.0.0")
     server_port: int = int(os.getenv("SERVER_PORT", "7860"))
 
+
+    frontend_url: str = os.getenv("FRONTEND_URL", "http://localhost:5173")  # Default frontend URL
+
     def validate(self) -> None:
         if not self.google_api_key:
             raise EnvironmentError(
