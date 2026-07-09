@@ -1,9 +1,4 @@
-import { UrlInputForm } from "./components/UrlInputForm";
-import { Waveform } from "./components/Waveform";
-import { SummaryPanel } from "./components/SummaryPanel";
-import { QAPanel } from "./components/QAPanel";
-import { useSummary } from "./hooks/useSummary";
-import { useQA } from "./hooks/useQA";
+
 import { Routes, Route } from "react-router-dom";
 
 
