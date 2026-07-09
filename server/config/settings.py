@@ -21,7 +21,7 @@ class Settings:
     embedding_model: str = os.getenv("EMBEDDING_MODEL", "models/gemini-embedding-2")
 
     # --- Chunking ---
-    chunk_size: int = int(os.getenv("CHUNK_SIZE", "800"))
+    chunk_size: int = int(os.getenv("CHUNK_SIZE", "300"))
     chunk_overlap: int = int(os.getenv("CHUNK_OVERLAP", "100"))
 
     # --- Retrieval ---

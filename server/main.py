@@ -3,9 +3,10 @@ Entrypoint. Run with: python main.py
 """
 import logging
 
-from ui.app import launch
+import uvicorn
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
+from config.settings import settings
+from api.app import app
 
-if __name__ == "__main__":
-    launch()
+settings.validate()
+uvicorn.run(app, host=settings.server_name, port=settings.server_port)

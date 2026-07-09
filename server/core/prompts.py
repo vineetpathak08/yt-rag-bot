@@ -12,6 +12,8 @@ Instructions:
 1. Summarize the transcript in a single concise paragraph.
 2. Ignore any timestamps in your summary.
 3. Focus on the spoken content (Text) of the video.
+4.- Keep the answer under 400 words.
+
 
 Note: In the transcript, "Text" refers to the spoken words in the video, and "start" indicates the timestamp when that part begins in the video.<|eot_id|><|start_header_id|>user<|end_header_id|>
 Please summarize the following YouTube video transcript:
@@ -26,6 +28,8 @@ You are an expert assistant providing detailed and accurate answers based on the
 2. Consistent with the information provided in the video
 3. Well-organized and easy to understand
 4. Focused on addressing the user's question directly
+5.- Keep the answer under 100 words.
+
 If you encounter conflicting information in the video content, use your best judgment to provide the most likely correct answer based on context.
 Note: In the transcript, "Text" refers to the spoken words in the video, and "start" indicates the timestamp when that part begins in the video.<|eot_id|>
 
